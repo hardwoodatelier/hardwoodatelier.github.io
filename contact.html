@@ -43,7 +43,7 @@
                         
                         <div class="contact-info">
                             <h3>Contact Information</h3>
-                            <p><strong>Email:</strong> cs.sec.dp@gmail.com</p>
+                            <p><strong>Email:</strong> <span id="email-display"></span></p>
                         </div>
                     </div>
                     
@@ -53,7 +53,7 @@
                             <p style="margin-bottom: 1.5rem; color: #666;">Ready to discuss your custom furniture project? Contact us directly:</p>
                             
                             <div style="margin-bottom: 2rem;">
-                                <a href="mailto:cs.sec.dp@gmail.com?subject=Custom Furniture Inquiry&body=Hello,%0D%0A%0D%0AI'm interested in discussing a custom furniture project.%0D%0A%0D%0AProject Type: [Bookshelf/Desk/Table/Other]%0D%0AProject Description: %0D%0A%0D%0APlease contact me to discuss the details.%0D%0A%0D%0AThank you!" 
+                                <a href="#" id="email-button"
                                    style="display: inline-block; background-color: #8B4513; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s ease;" 
                                    onmouseover="this.style.backgroundColor='#A0522D'" 
                                    onmouseout="this.style.backgroundColor='#8B4513'">Send Email</a>
@@ -78,6 +78,44 @@
             const nav = document.getElementById('nav');
             nav.classList.toggle('active');
         }
+
+        // Email obfuscation
+        function deobfuscateEmail() {
+            const parts = ['cs', 'sec', 'dp'];
+            const domain = ['gmail', 'com'];
+            return parts.join('.') + '@' + domain.join('.');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const email = deobfuscateEmail();
+            
+            // Display email
+            const emailDisplay = document.getElementById('email-display');
+            if (emailDisplay) {
+                emailDisplay.textContent = email;
+            }
+            
+            // Set up email button
+            const emailButton = document.getElementById('email-button');
+            if (emailButton) {
+                const subject = 'Custom Furniture Inquiry';
+                const body = `Hello,
+
+I'm interested in discussing a custom furniture project.
+
+Project Type: [Bookshelf/Desk/Table/Other]
+Project Description: 
+
+Please contact me to discuss the details.
+
+Thank you!`;
+                
+                emailButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                });
+            }
+        });
     </script>
 </body>
 </html>
