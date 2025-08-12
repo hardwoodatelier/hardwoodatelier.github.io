@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Hardwood Atelier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Hardwood Atelier</div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bookshelves.html">Bookshelves</a></li>
+                        <li><a href="desks.html">Desks</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>About Hardwood Atelier</h1>
+                <p>Crafting exceptional furniture with passion, precision, and a commitment to timeless design.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; margin-bottom: 3rem;">
+                    <h2 style="color: #8B4513; margin-bottom: 1.5rem; text-align: center;">Our Story</h2>
+                    <p style="margin-bottom: 1rem; line-height: 1.8; font-size: 1.1rem;">What started as a hobby has grown into a passion for creating beautiful, functional furniture. I was drawn to the natural beauty of hardwoods - their unique grain patterns and character that mass-produced furniture simply can't replicate.</p>
+                    <p style="margin-bottom: 1rem; line-height: 1.8; font-size: 1.1rem;">Most commercial furniture is made from particle board with thin veneers or wood that's been stained to look uniform. I prefer the authentic beauty of natural hardwood grain - each piece tells its own story through the wood's natural variations and character.</p>
+                    <p style="line-height: 1.8; font-size: 1.1rem;">I also found myself needing furniture in custom dimensions that simply weren't available in stores. This small operation allows me to focus on quality over quantity, creating one-of-a-kind pieces that fit your specific space and needs perfectly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Our Commitment</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Quality Materials</h3>
+                        <p>We source only the finest hardwoods from sustainable suppliers, ensuring each piece is built with materials that will stand the test of time.</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Expert Craftsmanship</h3>
+                        <p>Our skilled artisans bring decades of experience to every project, combining traditional techniques with modern precision.</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Sustainable Practices</h3>
+                        <p>We believe in responsible stewardship of our natural resources and are committed to environmentally conscious practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div style="background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+                    <h2 style="color: #8B4513; margin-bottom: 1.5rem;">Ready to Create Something Beautiful?</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #666;">Let's discuss your vision and bring your dream furniture to life.</p>
+                    <a href="contact.html" style="display: inline-block; background-color: #8B4513; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s ease;">Start Your Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hardwood Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

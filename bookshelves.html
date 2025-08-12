@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelves - Hardwood Atelier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Hardwood Atelier</div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bookshelves.html">Bookshelves</a></li>
+                        <li><a href="desks.html">Desks</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Custom Bookshelves</h1>
+                <p>Transform your space with our handcrafted bookshelves. Each piece is designed to showcase your collection while adding elegance to your home or office.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Featured Bookshelf</h2>
+                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 1.5rem;">
+                        <div>
+                            <h4 style="color: #8B4513; margin-bottom: 0.5rem;">Materials</h4>
+                            <p style="color: #666;">Walnut, Maple, Mahogany, and Bolivian Rosewood</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #8B4513; margin-bottom: 0.5rem;">Dimensions</h4>
+                            <p style="color: #666;">5 feet tall × 96 inches wide</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #8B4513; margin-bottom: 0.5rem;">Features</h4>
+                            <p style="color: #666;">Adjustable shelves for versatile storage</p>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 1.5rem; background: #f8f8f8; border-radius: 8px;">
+                        <h4 style="color: #8B4513; margin-bottom: 1rem;">Custom Sizing Available</h4>
+                        <p style="color: #666; margin-bottom: 1rem;">This bookshelf can be made to virtually any dimension to fit your space perfectly.</p>
+                        <p style="font-size: 0.95rem; color: #666;"><strong>Example pricing:</strong> A 4-foot tall × 96-inch version in Walnut and Maple starts around $900. Final cost varies based on dimensions and wood species selected.</p>
+                    </div>
+                </div>
+                
+                <div class="image-gallery">
+                    <img src="images/bookshelf/IMG_0321.jpeg" alt="Custom Bookshelf - Front View" onclick="openLightbox(this)">
+                    <img src="images/bookshelf/IMG_0324.jpeg" alt="Custom Bookshelf - Detail View" onclick="openLightbox(this)">
+                    <img src="images/bookshelf/IMG_0325.jpeg" alt="Custom Bookshelf - Side View" onclick="openLightbox(this)">
+                    <img src="images/bookshelf/IMG_0331.jpeg" alt="Custom Bookshelf - Close-up" onclick="openLightbox(this)">
+                    <img src="images/bookshelf/IMG_0332.jpeg" alt="Custom Bookshelf - Construction Detail" onclick="openLightbox(this)">
+                    <img src="images/bookshelf/IMG_0340.jpeg" alt="Custom Bookshelf - Finished Product" onclick="openLightbox(this)">
+                    <img src="images/bookshelf/IMG_0342.jpeg" alt="Custom Bookshelf - Final View" onclick="openLightbox(this)">
+                </div>
+                
+                <!-- Lightbox -->
+                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                    <img id="lightbox-img" src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Design Options</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Built-in Bookshelves</h3>
+                        <p>Custom-fitted to your space, our built-in bookshelves maximize storage while creating a seamless, architectural look.</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Freestanding Units</h3>
+                        <p>Versatile and moveable, our freestanding bookshelves can adapt to your changing needs and spaces.</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Library Walls</h3>
+                        <p>Floor-to-ceiling book storage that transforms any room into a sophisticated library space.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div style="background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+                    <h2 style="color: #8B4513; margin-bottom: 1.5rem;">Ready to Create Your Custom Bookshelf?</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #666;">Let's discuss your vision and create a bookshelf that perfectly fits your space and style.</p>
+                    <a href="contact.html" style="display: inline-block; background-color: #8B4513; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s ease;">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hardwood Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        
+        function openLightbox(img) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close lightbox with escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>

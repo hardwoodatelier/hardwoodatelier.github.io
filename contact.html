@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hardwood Atelier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Hardwood Atelier</div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bookshelves.html">Bookshelves</a></li>
+                        <li><a href="desks.html">Desks</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Ready to start your custom furniture project? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+                    <div>
+                        <h2 style="color: #8B4513; margin-bottom: 1.5rem;">Get In Touch</h2>
+                        <p style="margin-bottom: 2rem; line-height: 1.8;">Whether you have a specific vision in mind or need guidance on your furniture project, we're here to help. Contact us to schedule a consultation and discuss how we can bring your ideas to life.</p>
+                        
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <p><strong>Email:</strong> cs.sec.dp@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <h2 style="color: #8B4513; margin-bottom: 1.5rem;">Start Your Project</h2>
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <p style="margin-bottom: 1.5rem; color: #666;">Ready to discuss your custom furniture project? Contact us directly:</p>
+                            
+                            <div style="margin-bottom: 2rem;">
+                                <a href="mailto:cs.sec.dp@gmail.com?subject=Custom Furniture Inquiry&body=Hello,%0D%0A%0D%0AI'm interested in discussing a custom furniture project.%0D%0A%0D%0AProject Type: [Bookshelf/Desk/Table/Other]%0D%0AProject Description: %0D%0A%0D%0APlease contact me to discuss the details.%0D%0A%0D%0AThank you!" 
+                                   style="display: inline-block; background-color: #8B4513; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s ease;" 
+                                   onmouseover="this.style.backgroundColor='#A0522D'" 
+                                   onmouseout="this.style.backgroundColor='#8B4513'">Send Email</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hardwood Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

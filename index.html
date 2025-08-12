@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardwood Atelier - Custom Furniture Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Hardwood Atelier</div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bookshelves.html">Bookshelves</a></li>
+                        <li><a href="desks.html">Desks</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Crafting Beautiful Custom Furniture</h1>
+                <p>At Hardwood Atelier, we create bespoke furniture pieces that combine traditional craftsmanship with modern design. Each piece is carefully handcrafted using premium hardwoods to create furniture that lasts generations.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Our Furniture Collection</h2>
+                <div class="furniture-grid">
+                    <div class="furniture-card">
+                        <img src="images/bookshelf/IMG_0321.jpeg" alt="Custom Bookshelf">
+                        <h3>Bookshelves</h3>
+                        <p>Custom-built bookshelves designed to fit your space and style. From floor-to-ceiling libraries to compact reading nooks.</p>
+                    </div>
+                    <div class="furniture-card">
+                        <img src="https://via.placeholder.com/300x250/8B4513/FFFFFF?text=Desks+Coming+Soon" alt="Custom Desks Coming Soon">
+                        <h3>Desks</h3>
+                        <p>Functional and elegant workspaces crafted for productivity and style. Coming soon to our collection.</p>
+                    </div>
+                    <div class="furniture-card">
+                        <img src="https://via.placeholder.com/300x250/8B4513/FFFFFF?text=Tables+Coming+Soon" alt="Custom Tables Coming Soon">
+                        <h3>Tables</h3>
+                        <p>Dining tables, coffee tables, and side tables that bring families together. Coming soon to our collection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Why Choose Hardwood Atelier?</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="text-align: center; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Premium Materials</h3>
+                        <p>We source only the finest hardwoods, ensuring each piece is built to last for generations.</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Custom Design</h3>
+                        <p>Every piece is tailored to your specific needs, space, and style preferences.</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Expert Craftsmanship</h3>
+                        <p>Traditional woodworking techniques combined with modern precision for exceptional quality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hardwood Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
