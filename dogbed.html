@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscellaneous - Hardwood Atelier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Hardwood Atelier <span style="font-size: 0.7em;">-- Ashland, OR</span></div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bookshelves.html">Bookshelves</a></li>
+                        <li><a href="desks.html">Desks</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Miscellaneous Custom Pieces</h1>
+                <p>Unique custom creations for every need. From pet furniture to specialty items, we craft pieces with the same attention to detail and quality as our main furniture collection.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Featured Item: Custom Dog Bed</h2>
+                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 1.5rem;">
+                        <div>
+                            <h4 style="color: #8B4513; margin-bottom: 0.5rem;">Materials</h4>
+                            <p style="color: #666;">Walnut with smooth, pet-safe finish</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #8B4513; margin-bottom: 0.5rem;">Size</h4>
+                            <p style="color: #666;">German Shepherd sized</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #8B4513; margin-bottom: 0.5rem;">Features</h4>
+                            <p style="color: #666;">Raised design for comfort and airflow</p>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: left; padding: 2rem; background: #f8f8f8; border-radius: 8px;">
+                        <h4 style="color: #8B4513; margin-bottom: 1rem;">Custom Pet Furniture: When Style Meets Function</h4>
+                        
+                        <p style="color: #666; margin-bottom: 1rem;">Like many pet owners, we initially welcomed our large dog onto all our furniture. His favorite spot was a beautiful leather chair, but over time, we noticed inevitable wear and damage from daily use. Faced with the choice between protecting our investment and accommodating our beloved pet, we decided furniture was off-limits.</p>
+                        
+                        <p style="color: #666; margin-bottom: 1rem;">Our first solution—a standard cushioned dog bed—failed on two fronts. Not only did it clash with our home's aesthetic, but our dog simply refused to use it. That's when we discovered the power of custom design.</p>
+                        
+                        <p style="color: #666; margin-bottom: 1rem;">By crafting a elegant walnut frame around the existing cushion, we transformed an eyesore into a stunning piece of furniture that complemented our décor. But the real surprise came next: our dog immediately claimed his new bed as his own.</p>
+                        
+                        <p style="color: #666; margin-bottom: 1rem;">The lesson? When pet furniture looks and feels like real furniture, pets embrace it as their own special piece. Sometimes the difference between success and failure is simply giving your pet something beautiful enough to call their own.</p>
+                        
+                        <p style="color: #666; font-style: italic; margin-bottom: 1.5rem;">Ready to create custom furniture that works for your whole family—including your four-legged members?</p>
+                        
+                        <p style="font-size: 0.95rem; color: #666; text-align: center;"><strong>Contact us for pricing:</strong> Each piece is custom-quoted based on size, wood species, and design complexity.</p>
+                    </div>
+                </div>
+                
+                <div class="image-gallery">
+                    <img src="images/dogbed/20250903_181426.jpg" alt="Custom Dog Bed - Overview" onclick="openLightbox(this)">
+                    <img src="images/dogbed/IMG_0957.jpg" alt="Custom Dog Bed - Detail View" onclick="openLightbox(this)">
+                    <img src="images/dogbed/IMG_0958.jpg" alt="Custom Dog Bed - Side View" onclick="openLightbox(this)">
+                    <img src="images/dogbed/IMG_0964.jpg" alt="Custom Dog Bed - Close-up Detail" onclick="openLightbox(this)">
+                </div>
+                
+                <!-- Lightbox -->
+                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                    <img id="lightbox-img" src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Other Custom Projects</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Pet Furniture</h3>
+                        <p>Custom beds, feeding stations, and play structures designed for your pets' comfort and your home's style.</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Storage Solutions</h3>
+                        <p>Custom organizers, bins, and specialty storage pieces crafted to fit unique spaces and requirements.</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <h3 style="color: #8B4513; margin-bottom: 1rem;">Specialty Items</h3>
+                        <p>Unique pieces that don't fit traditional categories but require the same level of craftsmanship and attention to detail.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div style="background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+                    <h2 style="color: #8B4513; margin-bottom: 1.5rem;">Have a Unique Project in Mind?</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #666;">We love taking on special projects that challenge our creativity. Let's discuss your vision and bring it to life.</p>
+                    <a href="contact.html" style="display: inline-block; background-color: #8B4513; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s ease;">Start Your Custom Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hardwood Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        
+        function openLightbox(img) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close lightbox with escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
